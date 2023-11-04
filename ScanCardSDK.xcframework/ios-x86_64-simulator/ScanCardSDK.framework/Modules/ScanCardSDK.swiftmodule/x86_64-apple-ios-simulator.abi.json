@@ -1259,12 +1259,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((QKMRZScanner.QKMRZScanResult) -> ())?",
+                "printedName": "(([Swift.String : Any?]) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QKMRZScanner.QKMRZScanResult) -> ()",
+                    "printedName": "([Swift.String : Any?]) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1273,9 +1273,30 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "QKMRZScanResult",
-                        "printedName": "QKMRZScanner.QKMRZScanResult",
-                        "usr": "s:12QKMRZScanner15QKMRZScanResultC"
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any?]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Any?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:SD"
                       }
                     ]
                   }
@@ -1284,8 +1305,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11ScanCardSDK0A5MRZVCC8callBacky12QKMRZScanner15QKMRZScanResultCcSgvp",
-            "mangledName": "$s11ScanCardSDK0A5MRZVCC8callBacky12QKMRZScanner15QKMRZScanResultCcSgvp",
+            "usr": "s:11ScanCardSDK0A5MRZVCC8callBackySDySSypSgGcSgvp",
+            "mangledName": "$s11ScanCardSDK0A5MRZVCC8callBackySDySSypSgGcSgvp",
             "moduleName": "ScanCardSDK",
             "declAttributes": [
               "Custom",
@@ -1303,12 +1324,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((QKMRZScanner.QKMRZScanResult) -> ())?",
+                    "printedName": "(([Swift.String : Any?]) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(QKMRZScanner.QKMRZScanResult) -> ()",
+                        "printedName": "([Swift.String : Any?]) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1317,9 +1338,30 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "QKMRZScanResult",
-                            "printedName": "QKMRZScanner.QKMRZScanResult",
-                            "usr": "s:12QKMRZScanner15QKMRZScanResultC"
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any?]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Any?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "usr": "s:SD"
                           }
                         ]
                       }
@@ -1328,8 +1370,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11ScanCardSDK0A5MRZVCC8callBacky12QKMRZScanner15QKMRZScanResultCcSgvg",
-                "mangledName": "$s11ScanCardSDK0A5MRZVCC8callBacky12QKMRZScanner15QKMRZScanResultCcSgvg",
+                "usr": "s:11ScanCardSDK0A5MRZVCC8callBackySDySSypSgGcSgvg",
+                "mangledName": "$s11ScanCardSDK0A5MRZVCC8callBackySDySSypSgGcSgvg",
                 "moduleName": "ScanCardSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1347,12 +1389,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((QKMRZScanner.QKMRZScanResult) -> ())?",
+                    "printedName": "(([Swift.String : Any?]) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(QKMRZScanner.QKMRZScanResult) -> ()",
+                        "printedName": "([Swift.String : Any?]) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1361,9 +1403,30 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "QKMRZScanResult",
-                            "printedName": "QKMRZScanner.QKMRZScanResult",
-                            "usr": "s:12QKMRZScanner15QKMRZScanResultC"
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any?]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Any?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "usr": "s:SD"
                           }
                         ]
                       }
@@ -1372,8 +1435,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11ScanCardSDK0A5MRZVCC8callBacky12QKMRZScanner15QKMRZScanResultCcSgvs",
-                "mangledName": "$s11ScanCardSDK0A5MRZVCC8callBacky12QKMRZScanner15QKMRZScanResultCcSgvs",
+                "usr": "s:11ScanCardSDK0A5MRZVCC8callBackySDySSypSgGcSgvs",
+                "mangledName": "$s11ScanCardSDK0A5MRZVCC8callBackySDySSypSgGcSgvs",
                 "moduleName": "ScanCardSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1390,8 +1453,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11ScanCardSDK0A5MRZVCC8callBacky12QKMRZScanner15QKMRZScanResultCcSgvM",
-                "mangledName": "$s11ScanCardSDK0A5MRZVCC8callBacky12QKMRZScanner15QKMRZScanResultCcSgvM",
+                "usr": "s:11ScanCardSDK0A5MRZVCC8callBackySDySSypSgGcSgvM",
+                "mangledName": "$s11ScanCardSDK0A5MRZVCC8callBackySDySSypSgGcSgvM",
                 "moduleName": "ScanCardSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -4207,21 +4270,21 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 571,
+      "offset": 619,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 634,
+      "offset": 682,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "Array",
-      "offset": 735,
+      "offset": 783,
       "length": 165,
       "value": "[[(\"stepID\", \"1\"), (\"stepName\", \"Mặt trước\nChứng minh thư\/Thẻ căn cước\")], [(\"stepID\", \"2\"), (\"stepName\", \"Mặt sau\nChứng minh thư\/Thẻ căn cước\")]]"
     }

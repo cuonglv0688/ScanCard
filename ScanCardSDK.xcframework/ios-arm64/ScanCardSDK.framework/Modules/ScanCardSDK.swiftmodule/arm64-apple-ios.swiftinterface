@@ -41,7 +41,7 @@ public enum QRScannerError : Swift.Error {
   }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ScanMRZVC : ScanCardSDK.BaseViewController {
-  @_Concurrency.MainActor(unsafe) public var callBack: ((_ data: QKMRZScanner.QKMRZScanResult) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var callBack: ((_ data: [Swift.String : Any?]) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
