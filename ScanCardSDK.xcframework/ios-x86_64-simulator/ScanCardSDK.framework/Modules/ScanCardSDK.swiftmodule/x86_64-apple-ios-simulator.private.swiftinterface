@@ -1,0 +1,120 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios16.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ScanCardSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import Foundation
+import QKMRZScanner
+@_exported import ScanCardSDK
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class QRCodeViewController : ScanCardSDK.BaseViewController {
+  @_Concurrency.MainActor(unsafe) public var callBack: ((_ code: Swift.String, _ fullImage: UIKit.UIImage?, _ qrcodeImage: UIKit.UIImage?, _ isSuccess: Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var focusImage: UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ScanCardSDK.QRCodeViewController : ScanCardSDK.QRScannerViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func qrScannerView(_ qrScannerView: ScanCardSDK.QRScannerView, didSuccess code: Swift.String, fullImage: UIKit.UIImage?, qrCodeImage: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) public func qrScannerView(_ qrScannerView: ScanCardSDK.QRScannerView, didFailure error: ScanCardSDK.QRScannerError)
+}
+public enum QRScannerError : Swift.Error {
+  case unauthorized(AVFoundation.AVAuthorizationStatus)
+  case deviceFailure(ScanCardSDK.QRScannerError.DeviceError)
+  case readFailure
+  case unknown
+  public enum DeviceError {
+    case videoUnavailable
+    case inputInvalid
+    case metadataOutputFailure
+    case videoDataOutputFailure
+    public static func == (a: ScanCardSDK.QRScannerError.DeviceError, b: ScanCardSDK.QRScannerError.DeviceError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ScanMRZVC : ScanCardSDK.BaseViewController {
+  @_Concurrency.MainActor(unsafe) public var callBack: ((_ data: QKMRZScanner.QKMRZScanResult) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ScanCardSDK.ScanMRZVC : QKMRZScanner.QKMRZScannerViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func mrzScannerView(_ mrzScannerView: QKMRZScanner.QKMRZScannerView, didFind scanResult: QKMRZScanner.QKMRZScanResult)
+}
+public protocol QRScannerViewDelegate : AnyObject {
+  func qrScannerView(_ qrScannerView: ScanCardSDK.QRScannerView, didFailure error: ScanCardSDK.QRScannerError)
+  func qrScannerView(_ qrScannerView: ScanCardSDK.QRScannerView, didSuccess code: Swift.String, fullImage: UIKit.UIImage?, qrCodeImage: UIKit.UIImage?)
+  func qrScannerView(_ qrScannerView: ScanCardSDK.QRScannerView, didChangeTorchActive isOn: Swift.Bool)
+}
+extension ScanCardSDK.QRScannerViewDelegate {
+  public func qrScannerView(_ qrScannerView: ScanCardSDK.QRScannerView, didChangeTorchActive isOn: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class QRScannerView : UIKit.UIView {
+  public struct Input {
+    public static var `default`: ScanCardSDK.QRScannerView.Input {
+      get
+    }
+    public init(focusImage: UIKit.UIImage? = nil, focusImagePadding: CoreFoundation.CGFloat? = nil, animationDuration: Swift.Double? = nil, isBlurEffectEnabled: Swift.Bool? = nil)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var focusImage: UIKit.UIImage?
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var focusImagePadding: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var animationDuration: Swift.Double
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var isBlurEffectEnabled: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func configure(delegate: ScanCardSDK.QRScannerViewDelegate, input: ScanCardSDK.QRScannerView.Input = .default)
+  @_Concurrency.MainActor(unsafe) public func startRunning()
+  @_Concurrency.MainActor(unsafe) public func stopRunning()
+  @_Concurrency.MainActor(unsafe) public func rescan()
+  @_Concurrency.MainActor(unsafe) public func setTorchActive(isOn: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension ScanCardSDK.QRScannerView : AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func metadataOutput(_ output: AVFoundation.AVCaptureMetadataOutput, didOutput metadataObjects: [AVFoundation.AVMetadataObject], from connection: AVFoundation.AVCaptureConnection)
+}
+extension ScanCardSDK.QRScannerView : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 10.0, *)
+@_Concurrency.MainActor(unsafe) public class TakePhotoViewController : ScanCardSDK.BaseViewController, AVFoundation.AVCapturePhotoCaptureDelegate, ScanCardSDK.TakePhotoResultViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) public var steps: [[Swift.String : Swift.String]]
+  @_Concurrency.MainActor(unsafe) public var callBack: ((_ data: [Any]?, _ isFinish: Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVFoundation.AVCapturePhoto, error: Swift.Error?)
+  @_Concurrency.MainActor(unsafe) @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CoreMedia.CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CoreMedia.CMSampleBuffer?, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, bracketSettings: AVFoundation.AVCaptureBracketedStillImageSettings?, error: Swift.Error?)
+  @_Concurrency.MainActor(unsafe) public func clickBtnConfirm()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol TakePhotoResultViewControllerDelegate {
+  func clickBtnConfirm()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TakePhotoResultViewController : ScanCardSDK.BaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ScanCardSDK.QRScannerError.DeviceError : Swift.Equatable {}
+extension ScanCardSDK.QRScannerError.DeviceError : Swift.Hashable {}

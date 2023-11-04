@@ -1,0 +1,11 @@
+framework module ScanCardSDK {
+  umbrella header "ScanCardSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ScanCardSDK.Swift {
+  header "ScanCardSDK-Swift.h"
+  requires objc
+}
