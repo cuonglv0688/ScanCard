@@ -34,12 +34,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ())?",
+                "printedName": "(([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ()",
+                    "printedName": "([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -49,13 +49,27 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool)",
+                        "printedName": "([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool)",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:SD"
                           },
                           {
                             "kind": "TypeNominal",
@@ -100,8 +114,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11ScanCardSDK20QRCodeViewControllerC8callBackySS_So7UIImageCSgAGSbtcSgvp",
-            "mangledName": "$s11ScanCardSDK20QRCodeViewControllerC8callBackySS_So7UIImageCSgAGSbtcSgvp",
+            "usr": "s:11ScanCardSDK20QRCodeViewControllerC8callBackySDyS2SG_So7UIImageCSgAHSbtcSgvp",
+            "mangledName": "$s11ScanCardSDK20QRCodeViewControllerC8callBackySDyS2SG_So7UIImageCSgAHSbtcSgvp",
             "moduleName": "ScanCardSDK",
             "declAttributes": [
               "Custom",
@@ -119,12 +133,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ())?",
+                    "printedName": "(([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ()",
+                        "printedName": "([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -134,13 +148,27 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool)",
+                            "printedName": "([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:SD"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -185,8 +213,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11ScanCardSDK20QRCodeViewControllerC8callBackySS_So7UIImageCSgAGSbtcSgvg",
-                "mangledName": "$s11ScanCardSDK20QRCodeViewControllerC8callBackySS_So7UIImageCSgAGSbtcSgvg",
+                "usr": "s:11ScanCardSDK20QRCodeViewControllerC8callBackySDyS2SG_So7UIImageCSgAHSbtcSgvg",
+                "mangledName": "$s11ScanCardSDK20QRCodeViewControllerC8callBackySDyS2SG_So7UIImageCSgAHSbtcSgvg",
                 "moduleName": "ScanCardSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -204,12 +232,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ())?",
+                    "printedName": "(([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ()",
+                        "printedName": "([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -219,13 +247,27 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Swift.String, UIKit.UIImage?, UIKit.UIImage?, Swift.Bool)",
+                            "printedName": "([Swift.String : Swift.String], UIKit.UIImage?, UIKit.UIImage?, Swift.Bool)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:SD"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -270,8 +312,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11ScanCardSDK20QRCodeViewControllerC8callBackySS_So7UIImageCSgAGSbtcSgvs",
-                "mangledName": "$s11ScanCardSDK20QRCodeViewControllerC8callBackySS_So7UIImageCSgAGSbtcSgvs",
+                "usr": "s:11ScanCardSDK20QRCodeViewControllerC8callBackySDyS2SG_So7UIImageCSgAHSbtcSgvs",
+                "mangledName": "$s11ScanCardSDK20QRCodeViewControllerC8callBackySDyS2SG_So7UIImageCSgAHSbtcSgvs",
                 "moduleName": "ScanCardSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -288,8 +330,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11ScanCardSDK20QRCodeViewControllerC8callBackySS_So7UIImageCSgAGSbtcSgvM",
-                "mangledName": "$s11ScanCardSDK20QRCodeViewControllerC8callBackySS_So7UIImageCSgAGSbtcSgvM",
+                "usr": "s:11ScanCardSDK20QRCodeViewControllerC8callBackySDyS2SG_So7UIImageCSgAHSbtcSgvM",
+                "mangledName": "$s11ScanCardSDK20QRCodeViewControllerC8callBackySDyS2SG_So7UIImageCSgAHSbtcSgvM",
                 "moduleName": "ScanCardSDK",
                 "implicit": true,
                 "accessorKind": "_modify"

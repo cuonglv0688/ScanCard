@@ -11,7 +11,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class QRCodeViewController : ScanCardSDK.BaseViewController {
-  @_Concurrency.MainActor(unsafe) public var callBack: ((_ code: Swift.String, _ fullImage: UIKit.UIImage?, _ qrcodeImage: UIKit.UIImage?, _ isSuccess: Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var callBack: ((_ data: [Swift.String : Swift.String], _ fullImage: UIKit.UIImage?, _ qrcodeImage: UIKit.UIImage?, _ isSuccess: Swift.Bool) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) public var focusImage: UIKit.UIImage?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
