@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.swift_version = "5.0"
   spec.ios.deployment_target  = '12.0'
-  s.dependency "QKMRZParser", "~> 2.0.0"
-  s.dependency "SwiftyTesseract", "~> 3.1.3"
+  spec.dependency "QKMRZParser", "~> 2.0.0"
+  spec.dependency "SwiftyTesseract", "~> 3.1.3"
   spec.xcconfig          = { 'OTHER_LDFLAGS' => '-weak_framework AVFoundation -weak_framework Foundation -weak_framework UIKit -weak_framework CoreImage -weak_framework AudioToolbox'}
 
   spec.pod_target_xcconfig = {
