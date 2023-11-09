@@ -92,7 +92,7 @@
 		<data>
 		JbZKHE1Vf7i6StChbRRbIDRbScw=
 		</data>
-		<key>ocrb.traineddata</key>
+		<key>tessdata/ocrb.traineddata</key>
 		<data>
 		LCB9HKlImEGzlmLulZhNhPNS9fs=
 		</data>
@@ -246,7 +246,7 @@
 			K9jyRzEHL42eQWPE/UdvRmp/yl6xy+XzjqsE3V7rWDQ=
 			</data>
 		</dict>
-		<key>ocrb.traineddata</key>
+		<key>tessdata/ocrb.traineddata</key>
 		<dict>
 			<key>hash2</key>
 			<data>

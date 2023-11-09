@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ScanCardSDK"
-  spec.version      = "1.0.10"
+  spec.version      = "1.0.11"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
@@ -12,7 +12,6 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "cuonglv" => "cuonglv0688@gmail.com" }
   spec.source        = { :git => "https://github.com/cuonglv0688/ScanCard.git", :tag => "#{spec.version}" }
-  spec.resources    = "ScanCardSDK/QKMRZScanner/tessdata"
   spec.vendored_frameworks = 'ScanCardSDK.xcframework'
   spec.platform = :ios
   spec.swift_version = "5.0"
