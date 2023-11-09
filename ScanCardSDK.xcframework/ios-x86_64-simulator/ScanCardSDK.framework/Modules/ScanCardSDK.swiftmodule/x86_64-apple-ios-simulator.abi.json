@@ -6,6 +6,23 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -1282,13 +1299,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "QKMRZScanner",
-        "printedName": "QKMRZScanner",
-        "declKind": "Import",
-        "moduleName": "ScanCardSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "ScanMRZVC",
         "printedName": "ScanMRZVC",
@@ -1702,19 +1712,19 @@
               {
                 "kind": "TypeNominal",
                 "name": "QKMRZScannerView",
-                "printedName": "QKMRZScanner.QKMRZScannerView",
-                "usr": "c:@M@QKMRZScanner@objc(cs)QKMRZScannerView"
+                "printedName": "ScanCardSDK.QKMRZScannerView",
+                "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView"
               },
               {
                 "kind": "TypeNominal",
                 "name": "QKMRZScanResult",
-                "printedName": "QKMRZScanner.QKMRZScanResult",
-                "usr": "s:12QKMRZScanner15QKMRZScanResultC"
+                "printedName": "ScanCardSDK.QKMRZScanResult",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11ScanCardSDK0A5MRZVCC14mrzScannerView_7didFindy12QKMRZScanner0jG0C_AF15QKMRZScanResultCtF",
-            "mangledName": "$s11ScanCardSDK0A5MRZVCC14mrzScannerView_7didFindy12QKMRZScanner0jG0C_AF15QKMRZScanResultCtF",
+            "usr": "s:11ScanCardSDK0A5MRZVCC14mrzScannerView_7didFindyAA012QKMRZScannerG0C_AA15QKMRZScanResultCtF",
+            "mangledName": "$s11ScanCardSDK0A5MRZVCC14mrzScannerView_7didFindyAA012QKMRZScannerG0C_AA15QKMRZScanResultCtF",
             "moduleName": "ScanCardSDK",
             "declAttributes": [
               "Custom",
@@ -1746,8 +1756,8 @@
             "kind": "Conformance",
             "name": "QKMRZScannerViewDelegate",
             "printedName": "QKMRZScannerViewDelegate",
-            "usr": "s:12QKMRZScanner0A12ViewDelegateP",
-            "mangledName": "$s12QKMRZScanner0A12ViewDelegateP"
+            "usr": "s:11ScanCardSDK24QKMRZScannerViewDelegateP",
+            "mangledName": "$s11ScanCardSDK24QKMRZScannerViewDelegateP"
           },
           {
             "kind": "Conformance",
@@ -1806,6 +1816,829 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "QKMRZParser",
+        "printedName": "QKMRZParser",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QKMRZScanResult",
+        "printedName": "QKMRZScanResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "documentImage",
+            "printedName": "documentImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC13documentImageSo7UIImageCvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC13documentImageSo7UIImageCvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC13documentImageSo7UIImageCvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC13documentImageSo7UIImageCvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "documentType",
+            "printedName": "documentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC12documentTypeSSvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC12documentTypeSSvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC12documentTypeSSvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC12documentTypeSSvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "countryCode",
+            "printedName": "countryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC11countryCodeSSvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC11countryCodeSSvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC11countryCodeSSvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC11countryCodeSSvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "surnames",
+            "printedName": "surnames",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC8surnamesSSvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC8surnamesSSvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC8surnamesSSvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC8surnamesSSvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "givenNames",
+            "printedName": "givenNames",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC10givenNamesSSvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC10givenNamesSSvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC10givenNamesSSvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC10givenNamesSSvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "documentNumber",
+            "printedName": "documentNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC14documentNumberSSvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC14documentNumberSSvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC14documentNumberSSvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC14documentNumberSSvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nationalityCountryCode",
+            "printedName": "nationalityCountryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC22nationalityCountryCodeSSvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC22nationalityCountryCodeSSvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC22nationalityCountryCodeSSvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC22nationalityCountryCodeSSvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "birthdate",
+            "printedName": "birthdate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC9birthdate10Foundation4DateVSgvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC9birthdate10Foundation4DateVSgvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC9birthdate10Foundation4DateVSgvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC9birthdate10Foundation4DateVSgvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sex",
+            "printedName": "sex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC3sexSSSgvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC3sexSSSgvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC3sexSSSgvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC3sexSSSgvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiryDate",
+            "printedName": "expiryDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC10expiryDate10Foundation0G0VSgvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC10expiryDate10Foundation0G0VSgvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC10expiryDate10Foundation0G0VSgvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC10expiryDate10Foundation0G0VSgvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "personalNumber",
+            "printedName": "personalNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC14personalNumberSSvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC14personalNumberSSvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC14personalNumberSSvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC14personalNumberSSvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "personalNumber2",
+            "printedName": "personalNumber2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC15personalNumber2SSSgvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC15personalNumber2SSSgvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC15personalNumber2SSSgvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC15personalNumber2SSSgvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceImage",
+            "printedName": "faceImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK15QKMRZScanResultC9faceImageSo7UIImageCSgvp",
+            "mangledName": "$s11ScanCardSDK15QKMRZScanResultC9faceImageSo7UIImageCSgvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "SetterAccess",
+              "Lazy",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC9faceImageSo7UIImageCSgvg",
+                "mangledName": "$s11ScanCardSDK15QKMRZScanResultC9faceImageSo7UIImageCSgvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ScanCardSDK15QKMRZScanResultC",
+        "mangledName": "$s11ScanCardSDK15QKMRZScanResultC",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
       },
       {
         "kind": "Import",
@@ -4241,11 +5074,897 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyTesseract",
+        "printedName": "SwiftyTesseract",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "QKMRZParser",
+        "printedName": "QKMRZParser",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AudioToolbox",
+        "printedName": "AudioToolbox",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScanMRZWithImage",
+        "printedName": "ScanMRZWithImage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "readMRZ",
+            "printedName": "readMRZ(image:callBack:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any?]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any?]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any?]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Any?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ScanCardSDK0A12MRZWithImageC7readMRZ5image8callBackySo7UIImageC_ySDySSypSgGcSgtF",
+            "mangledName": "$s11ScanCardSDK0A12MRZWithImageC7readMRZ5image8callBackySo7UIImageC_ySDySSypSgGcSgtF",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ScanCardSDK0A12MRZWithImageC",
+        "mangledName": "$s11ScanCardSDK0A12MRZWithImageC",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyTesseract",
+        "printedName": "SwiftyTesseract",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "QKMRZParser",
+        "printedName": "QKMRZParser",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AudioToolbox",
+        "printedName": "AudioToolbox",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QKMRZScannerViewDelegate",
+        "printedName": "QKMRZScannerViewDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "mrzScannerView",
+            "printedName": "mrzScannerView(_:didFind:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QKMRZScannerView",
+                "printedName": "ScanCardSDK.QKMRZScannerView",
+                "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QKMRZScanResult",
+                "printedName": "ScanCardSDK.QKMRZScanResult",
+                "usr": "s:11ScanCardSDK15QKMRZScanResultC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ScanCardSDK24QKMRZScannerViewDelegateP010mrzScannerE0_7didFindyAA0dE0C_AA15QKMRZScanResultCtF",
+            "mangledName": "$s11ScanCardSDK24QKMRZScannerViewDelegateP010mrzScannerE0_7didFindyAA0dE0C_AA15QKMRZScanResultCtF",
+            "moduleName": "ScanCardSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ScanCardSDK.QKMRZScannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : ScanCardSDK.QKMRZScannerViewDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11ScanCardSDK24QKMRZScannerViewDelegateP",
+        "mangledName": "$s11ScanCardSDK24QKMRZScannerViewDelegateP",
+        "moduleName": "ScanCardSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QKMRZScannerView",
+        "printedName": "QKMRZScannerView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isScanning",
+            "printedName": "isScanning",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView(py)isScanning",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC10isScanningSbvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView(im)isScanning",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC10isScanningSbvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView(im)setIsScanning:",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC10isScanningSbvs",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vibrateOnResult",
+            "printedName": "vibrateOnResult",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK16QKMRZScannerViewC15vibrateOnResultSbvp",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC15vibrateOnResultSbvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK16QKMRZScannerViewC15vibrateOnResultSbvg",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC15vibrateOnResultSbvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK16QKMRZScannerViewC15vibrateOnResultSbvs",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC15vibrateOnResultSbvs",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK16QKMRZScannerViewC15vibrateOnResultSbvM",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC15vibrateOnResultSbvM",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "ScanCardSDK.QKMRZScannerViewDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK16QKMRZScannerViewC8delegateAA0dE8Delegate_pSgvp",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC8delegateAA0dE8Delegate_pSgvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ScanCardSDK.QKMRZScannerViewDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QKMRZScannerViewDelegate",
+                        "printedName": "ScanCardSDK.QKMRZScannerViewDelegate",
+                        "usr": "s:11ScanCardSDK24QKMRZScannerViewDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK16QKMRZScannerViewC8delegateAA0dE8Delegate_pSgvg",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC8delegateAA0dE8Delegate_pSgvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ScanCardSDK.QKMRZScannerViewDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QKMRZScannerViewDelegate",
+                        "printedName": "ScanCardSDK.QKMRZScannerViewDelegate",
+                        "usr": "s:11ScanCardSDK24QKMRZScannerViewDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK16QKMRZScannerViewC8delegateAA0dE8Delegate_pSgvs",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC8delegateAA0dE8Delegate_pSgvs",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK16QKMRZScannerViewC8delegateAA0dE8Delegate_pSgvM",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC8delegateAA0dE8Delegate_pSgvM",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cutoutRect",
+            "printedName": "cutoutRect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK16QKMRZScannerViewC10cutoutRectSo6CGRectVvp",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC10cutoutRectSo6CGRectVvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK16QKMRZScannerViewC10cutoutRectSo6CGRectVvg",
+                "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC10cutoutRectSo6CGRectVvg",
+                "moduleName": "ScanCardSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QKMRZScannerView",
+                "printedName": "ScanCardSDK.QKMRZScannerView",
+                "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView(im)initWithFrame:",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "ScanCardSDK",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ScanCardSDK.QKMRZScannerView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QKMRZScannerView",
+                    "printedName": "ScanCardSDK.QKMRZScannerView",
+                    "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView(im)initWithCoder:",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "ScanCardSDK",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareForInterfaceBuilder",
+            "printedName": "prepareForInterfaceBuilder()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView(im)prepareForInterfaceBuilder",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC26prepareForInterfaceBuilderyyF",
+            "moduleName": "ScanCardSDK",
+            "overriding": true,
+            "objc_name": "prepareForInterfaceBuilder",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView(im)layoutSubviews",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC14layoutSubviewsyyF",
+            "moduleName": "ScanCardSDK",
+            "overriding": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startScanning",
+            "printedName": "startScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ScanCardSDK16QKMRZScannerViewC13startScanningyyF",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC13startScanningyyF",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScanning",
+            "printedName": "stopScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ScanCardSDK16QKMRZScannerViewC12stopScanningyyF",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC12stopScanningyyF",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureOutput",
+            "printedName": "captureOutput(_:didOutput:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureOutput",
+                "printedName": "AVFoundation.AVCaptureOutput",
+                "usr": "c:objc(cs)AVCaptureOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureConnection",
+                "printedName": "AVFoundation.AVCaptureConnection",
+                "usr": "c:objc(cs)AVCaptureConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ScanCardSDK@objc(cs)QKMRZScannerView(im)captureOutput:didOutputSampleBuffer:fromConnection:",
+            "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC13captureOutput_03didG04fromySo09AVCaptureG0C_So17CMSampleBufferRefaSo0J10ConnectionCtF",
+            "moduleName": "ScanCardSDK",
+            "objc_name": "captureOutput:didOutputSampleBuffer:fromConnection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ScanCardSDK@objc(cs)QKMRZScannerView",
+        "mangledName": "$s11ScanCardSDK16QKMRZScannerViewC",
+        "moduleName": "ScanCardSDK",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "IBDesignable",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/LuminanceThresholdFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 286,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/LuminanceThresholdFilter.swift",
+      "kind": "StringLiteral",
+      "offset": 358,
+      "length": 223,
+      "value": "\"    kernel vec4 thresholdFilter(__sample pixel, float threshold) {\n    float luma = dot(pixel.rgb, vec3(0.2126, 0.7152, 0.0722));\n    return (luma > threshold) ? vec4(1) : vec4(0, 0, 0, 1);\n    }\""
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScanResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1123,
+      "length": 3,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScanResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1132,
+      "length": 3,
+      "value": "85"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScanResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1150,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScanResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1157,
+      "length": 2,
+      "value": "50"
+    },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QRScannerView.swift",
       "kind": "FloatLiteral",
@@ -4329,6 +6048,55 @@
       "offset": 783,
       "length": 165,
       "value": "[[(\"stepID\", \"1\"), (\"stepName\", \"Mặt trước\nChứng minh thư\/Thẻ căn cước\")], [(\"stepID\", \"2\"), (\"stepName\", \"Mặt sau\nChứng minh thư\/Thẻ căn cước\")]]"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
+      "kind": "StringLiteral",
+      "offset": 291,
+      "length": 6,
+      "value": "\"ocrb\""
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 435,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 545,
+      "length": 6,
+      "value": "\"ocrb\""
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 689,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1045,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1309,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1348,
+      "length": 4,
+      "value": "true"
     }
   ]
 }

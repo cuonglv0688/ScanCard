@@ -3,11 +3,16 @@
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ScanCardSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
+import AudioToolbox
+import CoreImage
+import CoreVideo
 import Foundation
-import QKMRZScanner
+import QKMRZParser
 @_exported import ScanCardSDK
 import Swift
+import SwiftyTesseract
 import UIKit
+import Vision
 import _Concurrency
 import _StringProcessing
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class QRCodeViewController : ScanCardSDK.BaseViewController {
@@ -49,8 +54,26 @@ public enum QRScannerError : Swift.Error {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension ScanCardSDK.ScanMRZVC : QKMRZScanner.QKMRZScannerViewDelegate {
-  @_Concurrency.MainActor(unsafe) public func mrzScannerView(_ mrzScannerView: QKMRZScanner.QKMRZScannerView, didFind scanResult: QKMRZScanner.QKMRZScanResult)
+extension ScanCardSDK.ScanMRZVC : ScanCardSDK.QKMRZScannerViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func mrzScannerView(_ mrzScannerView: ScanCardSDK.QKMRZScannerView, didFind scanResult: ScanCardSDK.QKMRZScanResult)
+}
+@_hasMissingDesignatedInitializers public class QKMRZScanResult {
+  final public let documentImage: UIKit.UIImage
+  final public let documentType: Swift.String
+  final public let countryCode: Swift.String
+  final public let surnames: Swift.String
+  final public let givenNames: Swift.String
+  final public let documentNumber: Swift.String
+  final public let nationalityCountryCode: Swift.String
+  final public let birthdate: Foundation.Date?
+  final public let sex: Swift.String?
+  final public let expiryDate: Foundation.Date?
+  final public let personalNumber: Swift.String
+  final public let personalNumber2: Swift.String?
+  public var faceImage: UIKit.UIImage? {
+    get
+  }
+  @objc deinit
 }
 public protocol QRScannerViewDelegate : AnyObject {
   func qrScannerView(_ qrScannerView: ScanCardSDK.QRScannerView, didFailure error: ScanCardSDK.QRScannerError)
@@ -115,6 +138,31 @@ public protocol TakePhotoResultViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ScanMRZWithImage {
+  public func readMRZ(image: UIKit.UIImage, callBack: ((_ data: [Swift.String : Any?]) -> Swift.Void)?)
+  @objc deinit
+}
+public protocol QKMRZScannerViewDelegate : AnyObject {
+  func mrzScannerView(_ mrzScannerView: ScanCardSDK.QKMRZScannerView, didFind scanResult: ScanCardSDK.QKMRZScanResult)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class QKMRZScannerView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var isScanning: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var vibrateOnResult: Swift.Bool
+  @_Concurrency.MainActor(unsafe) weak public var delegate: ScanCardSDK.QKMRZScannerViewDelegate?
+  @_Concurrency.MainActor(unsafe) public var cutoutRect: CoreFoundation.CGRect {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func startScanning()
+  @_Concurrency.MainActor(unsafe) public func stopScanning()
+}
+extension ScanCardSDK.QKMRZScannerView : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
 }
 extension ScanCardSDK.QRScannerError.DeviceError : Swift.Equatable {}
 extension ScanCardSDK.QRScannerError.DeviceError : Swift.Hashable {}

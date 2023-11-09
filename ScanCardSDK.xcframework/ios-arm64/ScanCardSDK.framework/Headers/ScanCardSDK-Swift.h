@@ -267,6 +267,26 @@ SWIFT_CLASS("_TtC11ScanCardSDK18BaseViewController")
 @end
 
 
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC11ScanCardSDK16QKMRZScannerView")
+@interface QKMRZScannerView : UIView
+@property (nonatomic) BOOL isScanning;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+- (void)layoutSubviews;
+@end
+
+@class AVCaptureOutput;
+@class AVCaptureConnection;
+
+@interface QKMRZScannerView (SWIFT_EXTENSION(ScanCardSDK)) <AVCaptureVideoDataOutputSampleBufferDelegate>
+- (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
+@end
+
+
 SWIFT_CLASS("_TtC11ScanCardSDK20QRCodeViewController")
 @interface QRCodeViewController : BaseViewController
 - (void)viewDidLoad;
@@ -291,13 +311,11 @@ SWIFT_CLASS("_TtC11ScanCardSDK13QRScannerView")
 
 @class AVCaptureMetadataOutput;
 @class AVMetadataObject;
-@class AVCaptureConnection;
 
 @interface QRScannerView (SWIFT_EXTENSION(ScanCardSDK)) <AVCaptureMetadataOutputObjectsDelegate>
 - (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)output didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
 
-@class AVCaptureOutput;
 
 @interface QRScannerView (SWIFT_EXTENSION(ScanCardSDK)) <AVCaptureVideoDataOutputSampleBufferDelegate>
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;

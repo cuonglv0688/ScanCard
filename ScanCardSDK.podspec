@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ScanCardSDK"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
@@ -16,8 +16,10 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.swift_version = "5.0"
   spec.ios.deployment_target  = '12.0'
-  spec.dependency "QKMRZScanner", '3.0.0'
-  spec.xcconfig          = { 'OTHER_LDFLAGS' => '-weak_framework AVFoundation' }
+  s.dependency "QKMRZParser", "~> 2.0.0"
+  s.dependency "SwiftyTesseract", "~> 3.1.3"
+  spec.xcconfig          = { 'OTHER_LDFLAGS' => '-weak_framework AVFoundation -weak_framework Foundation -weak_framework UIKit -weak_framework CoreImage -weak_framework AudioToolbox'}
+
   spec.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
