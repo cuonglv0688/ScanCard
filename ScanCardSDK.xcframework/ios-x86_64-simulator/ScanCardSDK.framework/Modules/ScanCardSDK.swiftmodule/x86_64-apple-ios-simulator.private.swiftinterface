@@ -141,7 +141,7 @@ public protocol TakePhotoResultViewControllerDelegate {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ScanMRZWithImage : ObjectiveC.NSObject {
   public static let shared: ScanCardSDK.ScanMRZWithImage
-  public func readMRZ(image: UIKit.UIImage, callBack: ((_ data: [Swift.String : Any?]) -> Swift.Void)?)
+  public func readMRZ(image: UIKit.UIImage, callBack: ((_ data: [Swift.String : Any?]?, _ isSuccess: Swift.Bool) -> Swift.Void)?)
   @objc deinit
 }
 public protocol QKMRZScannerViewDelegate : AnyObject {

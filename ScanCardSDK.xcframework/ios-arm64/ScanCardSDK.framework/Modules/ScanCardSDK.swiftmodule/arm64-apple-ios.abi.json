@@ -5195,12 +5195,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(([Swift.String : Any?]) -> ())?",
+                "printedName": "(([Swift.String : Any?]?, Swift.Bool) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "([Swift.String : Any?]) -> ()",
+                    "printedName": "([Swift.String : Any?]?, Swift.Bool) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5209,30 +5209,51 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Any?]",
+                        "name": "Tuple",
+                        "printedName": "([Swift.String : Any?]?, Swift.Bool)",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Any?",
+                            "printedName": "[Swift.String : Any?]?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "ProtocolComposition",
-                                "printedName": "Any"
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any?]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Optional",
+                                    "printedName": "Any?",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "ProtocolComposition",
+                                        "printedName": "Any"
+                                      }
+                                    ],
+                                    "usr": "s:Sq"
+                                  }
+                                ],
+                                "usr": "s:SD"
                               }
                             ],
                             "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
                           }
-                        ],
-                        "usr": "s:SD"
+                        ]
                       }
                     ]
                   }
@@ -5241,8 +5262,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11ScanCardSDK0A12MRZWithImageC7readMRZ5image8callBackySo7UIImageC_ySDySSypSgGcSgtF",
-            "mangledName": "$s11ScanCardSDK0A12MRZWithImageC7readMRZ5image8callBackySo7UIImageC_ySDySSypSgGcSgtF",
+            "usr": "s:11ScanCardSDK0A12MRZWithImageC7readMRZ5image8callBackySo7UIImageC_ySDySSypSgGSg_SbtcSgtF",
+            "mangledName": "$s11ScanCardSDK0A12MRZWithImageC7readMRZ5image8callBackySo7UIImageC_ySDySSypSgGSg_SbtcSgtF",
             "moduleName": "ScanCardSDK",
             "declAttributes": [
               "AccessControl"
