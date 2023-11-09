@@ -5126,6 +5126,57 @@
         "printedName": "ScanMRZWithImage",
         "children": [
           {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScanMRZWithImage",
+                "printedName": "ScanCardSDK.ScanMRZWithImage",
+                "usr": "c:@M@ScanCardSDK@objc(cs)ScanMRZWithImage"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK0A12MRZWithImageC6sharedACvpZ",
+            "mangledName": "$s11ScanCardSDK0A12MRZWithImageC6sharedACvpZ",
+            "moduleName": "ScanCardSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScanMRZWithImage",
+                    "printedName": "ScanCardSDK.ScanMRZWithImage",
+                    "usr": "c:@M@ScanCardSDK@objc(cs)ScanMRZWithImage"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK0A12MRZWithImageC6sharedACvgZ",
+                "mangledName": "$s11ScanCardSDK0A12MRZWithImageC6sharedACvgZ",
+                "moduleName": "ScanCardSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "readMRZ",
             "printedName": "readMRZ(image:callBack:)",
@@ -5200,13 +5251,70 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:11ScanCardSDK0A12MRZWithImageC",
+        "usr": "c:@M@ScanCardSDK@objc(cs)ScanMRZWithImage",
         "mangledName": "$s11ScanCardSDK0A12MRZWithImageC",
         "moduleName": "ScanCardSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
-        "hasMissingDesignatedInitializers": true
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -6052,14 +6160,14 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
       "kind": "StringLiteral",
-      "offset": 291,
+      "offset": 387,
       "length": 6,
       "value": "\"ocrb\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
       "kind": "BooleanLiteral",
-      "offset": 435,
+      "offset": 531,
       "length": 4,
       "value": "true"
     },

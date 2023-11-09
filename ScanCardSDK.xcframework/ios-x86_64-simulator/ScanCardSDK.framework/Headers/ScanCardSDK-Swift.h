@@ -234,6 +234,7 @@ using UInt = size_t;
 @import CoreFoundation;
 @import CoreMedia;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -331,6 +332,13 @@ SWIFT_CLASS("_TtC11ScanCardSDK9ScanMRZVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
+SWIFT_CLASS("_TtC11ScanCardSDK16ScanMRZWithImage")
+@interface ScanMRZWithImage : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC11ScanCardSDK29TakePhotoResultViewController")

@@ -139,7 +139,8 @@ public protocol TakePhotoResultViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ScanMRZWithImage {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ScanMRZWithImage : ObjectiveC.NSObject {
+  public static let shared: ScanCardSDK.ScanMRZWithImage
   public func readMRZ(image: UIKit.UIImage, callBack: ((_ data: [Swift.String : Any?]) -> Swift.Void)?)
   @objc deinit
 }
