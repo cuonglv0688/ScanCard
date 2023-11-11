@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AudioToolbox
+import CoreImage.CIFilterBuiltins
 import CoreImage
 import CoreVideo
 import Foundation
@@ -141,6 +142,7 @@ public protocol TakePhotoResultViewControllerDelegate {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ScanMRZWithImage : ObjectiveC.NSObject {
   public static let shared: ScanCardSDK.ScanMRZWithImage
+  final public let widthAllow: Swift.Double
   public func readMRZ(image: UIKit.UIImage, callBack: ((_ data: [Swift.String : Any?]?, _ isSuccess: Swift.Bool) -> Swift.Void)?)
   @objc deinit
 }

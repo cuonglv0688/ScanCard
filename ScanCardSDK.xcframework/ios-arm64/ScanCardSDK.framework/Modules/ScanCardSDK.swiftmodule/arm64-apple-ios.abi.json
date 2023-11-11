@@ -23,6 +23,13 @@
       },
       {
         "kind": "Import",
+        "name": "CoreImage.CIFilterBuiltins",
+        "printedName": "CoreImage.CIFilterBuiltins",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5121,13 +5128,6 @@
         "moduleName": "ScanCardSDK"
       },
       {
-        "kind": "Import",
-        "name": "CoreImage",
-        "printedName": "CoreImage",
-        "declKind": "Import",
-        "moduleName": "ScanCardSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "ScanMRZWithImage",
         "printedName": "ScanMRZWithImage",
@@ -5175,6 +5175,55 @@
                 "mangledName": "$s11ScanCardSDK0A12MRZWithImageC6sharedACvgZ",
                 "moduleName": "ScanCardSDK",
                 "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "widthAllow",
+            "printedName": "widthAllow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK0A12MRZWithImageC10widthAllowSdvp",
+            "mangledName": "$s11ScanCardSDK0A12MRZWithImageC10widthAllowSdvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK0A12MRZWithImageC10widthAllowSdvg",
+                "mangledName": "$s11ScanCardSDK0A12MRZWithImageC10widthAllowSdvg",
+                "moduleName": "ScanCardSDK",
                 "implicit": true,
                 "declAttributes": [
                   "Final"
@@ -6062,14 +6111,14 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/LuminanceThresholdFilter.swift",
       "kind": "FloatLiteral",
-      "offset": 286,
+      "offset": 319,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/LuminanceThresholdFilter.swift",
       "kind": "StringLiteral",
-      "offset": 358,
+      "offset": 391,
       "length": 223,
       "value": "\"    kernel vec4 thresholdFilter(__sample pixel, float threshold) {\n    float luma = dot(pixel.rgb, vec3(0.2126, 0.7152, 0.0722));\n    return (luma > threshold) ? vec4(1) : vec4(0, 0, 0, 1);\n    }\""
     },
@@ -6188,16 +6237,23 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
       "kind": "StringLiteral",
-      "offset": 408,
+      "offset": 436,
       "length": 6,
       "value": "\"ocrb\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
       "kind": "BooleanLiteral",
-      "offset": 552,
+      "offset": 580,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
+      "kind": "FloatLiteral",
+      "offset": 614,
+      "length": 3,
+      "value": "0.4"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScannerView.swift",
