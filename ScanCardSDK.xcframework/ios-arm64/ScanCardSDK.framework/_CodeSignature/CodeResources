@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		DPnhKzznmYJ0j0GyKFFTtYEJ46E=
+		HYgSE47deJ3ZwOqTS85W14i8hfo=
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rK9Fc1RTd/PcwhuJgAJ4VSJqRQw=
+		ldABqTVlDKfSeBkA7stV2DKZca4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -208,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DNc2wPCsvCQCBDIBJ3o6hkpAbEg1PmdhSUFEmL2tZfQ=
+			qwFKpfq1u3a5CwV0i9bLUeOuKuoxyfQNGOsFQ1tOAY8=
 			</data>
 		</dict>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wW2oynYVCDr2VNs5fJz3831+bpj8itZv0HY4ATw0CR8=
+			CiS9B1BSW5rG6IFIQeD3e+0VYGLUcZxQRZJ+d51UzuI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

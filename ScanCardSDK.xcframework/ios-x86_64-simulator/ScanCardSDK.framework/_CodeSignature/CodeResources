@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DPnhKzznmYJ0j0GyKFFTtYEJ46E=
+		HYgSE47deJ3ZwOqTS85W14i8hfo=
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OyG9AMFIs/Ar1cYQu6cfUBfIAlA=
+		XtIaebBNi4aUYOyG1kS3wXM/ZT4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -208,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DNc2wPCsvCQCBDIBJ3o6hkpAbEg1PmdhSUFEmL2tZfQ=
+			qwFKpfq1u3a5CwV0i9bLUeOuKuoxyfQNGOsFQ1tOAY8=
 			</data>
 		</dict>
 		<key>Modules/ScanCardSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZgudYXY7GtQUjEazZauLz20SlVffx12Tmr/6brpwhY8=
+			sC8zdLk3QQa06f3Wgk6rkFWNOd09pJ/Z3jWMHabFbEg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -5121,6 +5121,13 @@
         "moduleName": "ScanCardSDK"
       },
       {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "ScanCardSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ScanMRZWithImage",
         "printedName": "ScanMRZWithImage",
@@ -6181,14 +6188,14 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
       "kind": "StringLiteral",
-      "offset": 387,
+      "offset": 408,
       "length": 6,
       "value": "\"ocrb\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
       "kind": "BooleanLiteral",
-      "offset": 531,
+      "offset": 552,
       "length": 4,
       "value": "true"
     },
