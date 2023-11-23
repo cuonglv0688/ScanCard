@@ -4,7 +4,6 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AudioToolbox
-import CoreImage.CIFilterBuiltins
 import CoreImage
 import CoreVideo
 import Foundation
@@ -118,8 +117,10 @@ extension ScanCardSDK.QRScannerView : AVFoundation.AVCaptureVideoDataOutputSampl
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 10.0, *)
 @_Concurrency.MainActor(unsafe) public class TakePhotoViewController : ScanCardSDK.BaseViewController, AVFoundation.AVCapturePhotoCaptureDelegate, ScanCardSDK.TakePhotoResultViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) public var isShowBack: Swift.Bool
   @_Concurrency.MainActor(unsafe) public var steps: [[Swift.String : Swift.String]]
   @_Concurrency.MainActor(unsafe) public var callBack: ((_ data: [Any]?, _ isFinish: Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var clickBackBtn: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
@@ -142,7 +143,7 @@ public protocol TakePhotoResultViewControllerDelegate {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ScanMRZWithImage : ObjectiveC.NSObject {
   public static let shared: ScanCardSDK.ScanMRZWithImage
-  final public let widthAllow: Swift.Double
+  public var widthAllow: Swift.Double
   public func readMRZ(image: UIKit.UIImage, callBack: ((_ data: [Swift.String : Any?]?, _ isSuccess: Swift.Bool) -> Swift.Void)?)
   @objc deinit
 }

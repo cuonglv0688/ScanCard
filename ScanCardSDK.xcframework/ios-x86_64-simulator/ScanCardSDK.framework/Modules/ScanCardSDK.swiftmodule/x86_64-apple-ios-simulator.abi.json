@@ -23,13 +23,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreImage.CIFilterBuiltins",
-        "printedName": "CoreImage.CIFilterBuiltins",
-        "declKind": "Import",
-        "moduleName": "ScanCardSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -4016,6 +4009,93 @@
         "children": [
           {
             "kind": "Var",
+            "name": "isShowBack",
+            "printedName": "isShowBack",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK23TakePhotoViewControllerC10isShowBackSbvp",
+            "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC10isShowBackSbvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC10isShowBackSbvg",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC10isShowBackSbvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC10isShowBackSbvs",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC10isShowBackSbvs",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC10isShowBackSbvM",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC10isShowBackSbvM",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "steps",
             "printedName": "steps",
             "children": [
@@ -4392,6 +4472,150 @@
                 "declKind": "Accessor",
                 "usr": "s:11ScanCardSDK23TakePhotoViewControllerC8callBackySayypGSg_SbtcSgvM",
                 "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC8callBackySayypGSg_SbtcSgvM",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clickBackBtn",
+            "printedName": "clickBackBtn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK23TakePhotoViewControllerC12clickBackBtnyycSgvp",
+            "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC12clickBackBtnyycSgvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC12clickBackBtnyycSgvg",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC12clickBackBtnyycSgvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC12clickBackBtnyycSgvs",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC12clickBackBtnyycSgvs",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC12clickBackBtnyycSgvM",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC12clickBackBtnyycSgvM",
                 "moduleName": "ScanCardSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5201,11 +5425,9 @@
             "moduleName": "ScanCardSDK",
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5225,10 +5447,49 @@
                 "mangledName": "$s11ScanCardSDK0A12MRZWithImageC10widthAllowSdvg",
                 "moduleName": "ScanCardSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK0A12MRZWithImageC10widthAllowSdvs",
+                "mangledName": "$s11ScanCardSDK0A12MRZWithImageC10widthAllowSdvs",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK0A12MRZWithImageC10widthAllowSdvM",
+                "mangledName": "$s11ScanCardSDK0A12MRZWithImageC10widthAllowSdvM",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -6111,14 +6372,14 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/LuminanceThresholdFilter.swift",
       "kind": "FloatLiteral",
-      "offset": 319,
+      "offset": 286,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/LuminanceThresholdFilter.swift",
       "kind": "StringLiteral",
-      "offset": 391,
+      "offset": 358,
       "length": 223,
       "value": "\"    kernel vec4 thresholdFilter(__sample pixel, float threshold) {\n    float luma = dot(pixel.rgb, vec3(0.2126, 0.7152, 0.0722));\n    return (luma > threshold) ? vec4(1) : vec4(0, 0, 0, 1);\n    }\""
     },
@@ -6216,21 +6477,28 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 619,
+      "offset": 704,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 682,
+      "offset": 802,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "Array",
-      "offset": 783,
+      "offset": 903,
       "length": 165,
       "value": "[[(\"stepID\", \"1\"), (\"stepName\", \"Mặt trước\nChứng minh thư\/Thẻ căn cước\")], [(\"stepID\", \"2\"), (\"stepName\", \"Mặt sau\nChứng minh thư\/Thẻ căn cước\")]]"
     },
