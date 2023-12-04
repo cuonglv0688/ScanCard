@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		smhPIrRY6fkRtYD1Mm4Kl0VZb80=
+		qJX6bkg5OM5K5FwACQrYCd5R0GA=
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		1P/av6W1UZTHsP0uhfYmmM4DtPE=
+		63U8SD2aflFTr6sbE7wBXmMRUzs=
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1P/av6W1UZTHsP0uhfYmmM4DtPE=
+		63U8SD2aflFTr6sbE7wBXmMRUzs=
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YlOy2Fyph2tem1Ab6QBX+raIrYk=
+		9vwh5T6RZEP67YYVjKoS02lMaUg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -208,14 +208,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0K2Ni7tiCd3u6LU0DAabj8tt78RW6uZzkxsBt2+IwPA=
+			0KE11w+O5yhS5czq4fabI6BjaRzFkD8tuAho37ZXSgI=
 			</data>
 		</dict>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T0Btnrgpd3ZMyBeIg4BjcGDykFtGpe3l8ZObD4Bu4pU=
+			O9ZGnKv2kqIljT9lhU2U5JcHN2sa8tIQRE85dsvPRi0=
 			</data>
 		</dict>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -229,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T0Btnrgpd3ZMyBeIg4BjcGDykFtGpe3l8ZObD4Bu4pU=
+			O9ZGnKv2kqIljT9lhU2U5JcHN2sa8tIQRE85dsvPRi0=
 			</data>
 		</dict>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lIBEtMtSKcc4W3lGDaCBJ3mICeqpfAG3w0lAyDKYOco=
+			BV7sWw6ci3pKOd/GReVebyFXdGG4IroKHm8itUbSk+o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

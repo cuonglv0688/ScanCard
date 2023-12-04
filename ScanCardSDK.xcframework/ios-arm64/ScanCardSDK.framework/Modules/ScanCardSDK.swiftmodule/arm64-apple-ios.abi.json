@@ -4096,6 +4096,93 @@
           },
           {
             "kind": "Var",
+            "name": "isShowCrop",
+            "printedName": "isShowCrop",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK23TakePhotoViewControllerC10isShowCropSbvp",
+            "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC10isShowCropSbvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC10isShowCropSbvg",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC10isShowCropSbvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC10isShowCropSbvs",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC10isShowCropSbvs",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK23TakePhotoViewControllerC10isShowCropSbvM",
+                "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC10isShowCropSbvM",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "steps",
             "printedName": "steps",
             "children": [
@@ -5494,6 +5581,92 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isUseCrop",
+            "printedName": "isUseCrop",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ScanCardSDK0A12MRZWithImageC9isUseCropSbvp",
+            "mangledName": "$s11ScanCardSDK0A12MRZWithImageC9isUseCropSbvp",
+            "moduleName": "ScanCardSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK0A12MRZWithImageC9isUseCropSbvg",
+                "mangledName": "$s11ScanCardSDK0A12MRZWithImageC9isUseCropSbvg",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK0A12MRZWithImageC9isUseCropSbvs",
+                "mangledName": "$s11ScanCardSDK0A12MRZWithImageC9isUseCropSbvs",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ScanCardSDK0A12MRZWithImageC9isUseCropSbvM",
+                "mangledName": "$s11ScanCardSDK0A12MRZWithImageC9isUseCropSbvM",
+                "moduleName": "ScanCardSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "readMRZ",
             "printedName": "readMRZ(image:callBack:)",
@@ -6484,21 +6657,28 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 780,
+      "offset": 778,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 843,
+      "offset": 876,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "Array",
-      "offset": 944,
+      "offset": 977,
       "length": 165,
       "value": "[[(\"stepID\", \"1\"), (\"stepName\", \"Mặt trước\nChứng minh thư\/Thẻ căn cước\")], [(\"stepID\", \"2\"), (\"stepName\", \"Mặt sau\nChứng minh thư\/Thẻ căn cước\")]]"
     },
@@ -6522,6 +6702,13 @@
       "offset": 614,
       "length": 3,
       "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/ScanMRZWithImage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 645,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/QKMRZScanner\/QKMRZScannerView.swift",
