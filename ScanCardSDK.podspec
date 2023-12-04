@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ScanCardSDK"
-  spec.version      = "1.0.16"
+  spec.version      = "1.0.17"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
