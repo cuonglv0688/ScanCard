@@ -6477,28 +6477,28 @@
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 704,
+      "offset": 745,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 739,
+      "offset": 780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 802,
+      "offset": 843,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Data\/Work\/ScanCardSDK\/ScanCardSDK\/TakePhotoViewController.swift",
       "kind": "Array",
-      "offset": 903,
+      "offset": 944,
       "length": 165,
       "value": "[[(\"stepID\", \"1\"), (\"stepName\", \"Mặt trước\nChứng minh thư\/Thẻ căn cước\")], [(\"stepID\", \"2\"), (\"stepName\", \"Mặt sau\nChứng minh thư\/Thẻ căn cước\")]]"
     },

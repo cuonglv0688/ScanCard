@@ -22,7 +22,7 @@
 		</data>
 		<key>Main.storyboardc/5io-GI-ntF-view-OpR-k1-c0G.nib</key>
 		<data>
-		uzLpLVmu16vDhcXS1Wd9vVEAGFQ=
+		1wVzLm+lA8n+46Xrj4X3ZTd4p24=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		8CwttQOJU8E7Zpi8+VhDj7VSQWA=
+		smhPIrRY6fkRtYD1Mm4Kl0VZb80=
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		L3Ddv7WL3Bg3Y5OlYVzYhsYhjeo=
+		YlOy2Fyph2tem1Ab6QBX+raIrYk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SJZjJXPBNeHyGfGY2hpxGc6JrkTOlx5kQJZcpuCvJ48=
+			K2QW6MsjY0OvyZM3eRI6KZ3WAHRTvLOe8GVmtJeC+2o=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
@@ -208,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k+QyrKUSwAU9YqW5wk/kU5eyKiSTnNouS537TY3ACAY=
+			0K2Ni7tiCd3u6LU0DAabj8tt78RW6uZzkxsBt2+IwPA=
 			</data>
 		</dict>
 		<key>Modules/ScanCardSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wbGXiXFxib+22dPSyGad4/gJoyfaetydvLpGQBS0JYo=
+			lIBEtMtSKcc4W3lGDaCBJ3mICeqpfAG3w0lAyDKYOco=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

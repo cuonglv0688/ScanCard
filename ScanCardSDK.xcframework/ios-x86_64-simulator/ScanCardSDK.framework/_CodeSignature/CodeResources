@@ -22,7 +22,7 @@
 		</data>
 		<key>Main.storyboardc/5io-GI-ntF-view-OpR-k1-c0G.nib</key>
 		<data>
-		uzLpLVmu16vDhcXS1Wd9vVEAGFQ=
+		1wVzLm+lA8n+46Xrj4X3ZTd4p24=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8CwttQOJU8E7Zpi8+VhDj7VSQWA=
+		smhPIrRY6fkRtYD1Mm4Kl0VZb80=
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/ScanCardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zooMT6F0LSsBGeC401l4ZAG2hmE=
+		bB4leDZzgm881DKhktcPU4AbwD8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SJZjJXPBNeHyGfGY2hpxGc6JrkTOlx5kQJZcpuCvJ48=
+			K2QW6MsjY0OvyZM3eRI6KZ3WAHRTvLOe8GVmtJeC+2o=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
@@ -208,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k+QyrKUSwAU9YqW5wk/kU5eyKiSTnNouS537TY3ACAY=
+			0K2Ni7tiCd3u6LU0DAabj8tt78RW6uZzkxsBt2+IwPA=
 			</data>
 		</dict>
 		<key>Modules/ScanCardSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9J4Ox1Yxhg6U0DYStqiQEt7ncwG4vVl12UvWs5jUSrs=
+			Wc3iM4GO99Cnvl2WZmTwtD1CAADNhH5GEPuGr4HHZ0A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
