@@ -146,7 +146,9 @@ public protocol TakePhotoResultViewControllerDelegate {
   public static let shared: ScanCardSDK.ScanMRZWithImage
   public var widthAllow: Swift.Double
   public var isUseCrop: Swift.Bool
+  @available(iOS 13.0, *)
   public func readMRZ(image: UIKit.UIImage, callBack: ((_ data: [Swift.String : Any?]?, _ isSuccess: Swift.Bool) -> Swift.Void)?)
+  public func readMRZ2(image: UIKit.UIImage, callBack: ((_ data: [Swift.String : Any?]?, _ isSuccess: Swift.Bool) -> Swift.Void)?)
   @objc deinit
 }
 public protocol QKMRZScannerViewDelegate : AnyObject {
