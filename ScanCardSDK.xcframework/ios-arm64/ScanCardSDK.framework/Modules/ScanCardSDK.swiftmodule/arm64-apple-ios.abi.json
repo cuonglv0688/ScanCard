@@ -4711,6 +4711,32 @@
           },
           {
             "kind": "Function",
+            "name": "viewDidLayoutSubviews",
+            "printedName": "viewDidLayoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ScanCardSDK@objc(cs)TakePhotoViewController(im)viewDidLayoutSubviews",
+            "mangledName": "$s11ScanCardSDK23TakePhotoViewControllerC21viewDidLayoutSubviewsyyF",
+            "moduleName": "ScanCardSDK",
+            "overriding": true,
+            "objc_name": "viewDidLayoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "viewDidLoad",
             "printedName": "viewDidLoad()",
             "children": [

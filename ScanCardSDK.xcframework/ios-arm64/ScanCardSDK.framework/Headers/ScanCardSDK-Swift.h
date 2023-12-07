@@ -355,6 +355,7 @@ SWIFT_CLASS("_TtC11ScanCardSDK29TakePhotoResultViewController")
 
 SWIFT_CLASS("_TtC11ScanCardSDK23TakePhotoViewController") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface TakePhotoViewController : BaseViewController <AVCapturePhotoCaptureDelegate>
+- (void)viewDidLayoutSubviews;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;

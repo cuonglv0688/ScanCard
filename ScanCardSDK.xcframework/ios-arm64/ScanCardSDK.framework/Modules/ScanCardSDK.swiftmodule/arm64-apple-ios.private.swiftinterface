@@ -122,6 +122,7 @@ extension ScanCardSDK.QRScannerView : AVFoundation.AVCaptureVideoDataOutputSampl
   @_Concurrency.MainActor(unsafe) public var steps: [[Swift.String : Swift.String]]
   @_Concurrency.MainActor(unsafe) public var callBack: ((_ data: [Any]?, _ isFinish: Swift.Bool) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) public var clickBackBtn: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
